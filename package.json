@@ -1,0 +1,42 @@
+{
+  "name": "node-express-react-redux-app",
+  "version": "1.0.0",
+  "description": "React-redux-app with a Node Express Backend",
+  "author": {
+    "name": "Michael James",
+    "url": "http://tomrrowcolor.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "mocha": "^6.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelgabriel01/express-crud-api-react-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelgabriel01/express-crud-api-react-redux/issues"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "create-react-app"
+  ]
+}
