@@ -1,4 +1,4 @@
-# Simple react-redux-app with Node Express Backend
+# Simple react-redux-app with Node Express Backend and React Apollo + GraphQL
 
 > React-redux-app with a Node Express Backend
 
@@ -38,9 +38,10 @@ NODE_ENV=production yarn dev:server
 
 This will proxy our API requests to our API server, since Express server is running on **localhost:8000**
 
-## Run Tests
+## Run React Apollo + GraphQL app
 
 ```
-cd client
-yarn test
+cd react-apollo-express
+yarn
+yarn dev
 ```

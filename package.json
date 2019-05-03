@@ -1,7 +1,7 @@
 {
   "name": "node-express-react-redux-app",
   "version": "1.0.0",
-  "description": "React-redux-app with a Node Express Backend",
+  "description": "React-redux-app with Node Express Backend",
   "author": {
     "name": "Michael James",
     "url": "http://tomrrowcolor.com"
